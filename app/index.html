@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Take Notes">
+        <meta name="author" content="James MJ">
+        <script src="assets/lib/angular.min.1.4.8.js"></script>
+        <script src="assets/lib/angular-ui-router.min.js"></script>    
+        <script src="assets/lib/ui-bootstrap-tpls-0.14.2.min.js"></script>    
+        <script src='assets/lib/textAngular.min.js'></script>
+		<script src="js/app.min.js"></script>
+	</head>
+	<body ng-app="myProject">
+		<header ui-view="header" class="navbar navbar-inverse navbar-fixed-top" role="navigation"></header>
+        <div ui-view class="main container"></div>
+		<footer ui-view="footer"></footer>
+	</body>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css" >
+    <script src="assets/lib/jquery-1.10.2.min.js"></script>
+    <script src="assets/lib/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,49 @@
+/*var $font-color: #5edcdb;7ac9ed
+var $background-color: #fff;*/
+html {
+    /*background: url("../assets/images/bk1.jpg") no-repeat center center fixed;*/
+    /*background-color: #FCFFFB;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+body{
+    padding-top: 50px;
+    margin: 0;
+    /*background-color: #FCFFFB;*/
+    .main{
+        margin-top: 55px;
+        margin-bottom: 65px;
+    }
+    .clear {
+        clear: both;
+    }
+    .brand-name{
+        color: #4cae4c;
+    }
+    a{
+        color: #3dade0;
+    }
+    .right {
+        float: right;
+    }
+    .left {
+        float: left;
+    }
+}
+
+
+@import "src/components/HeaderWidget/HeaderWidget-sass.scss";
+@import "src/components/FooterWidget/FooterWidget-sass.scss";
+@import "src/components/QusAnsViewWidget/QusAnsViewWidget-sass.scss";
+@import "src/components/QusAnsListWidget/QusAnsListWidget-sass.scss";
+@import "src/pages/HomePage/HomePage-sass.scss";
+@import "src/pages/QusAnsPage/QusAnsPage-sass.scss";
+@import "src/pages/UpdateQusAnsPage/UpdateQusAns-sass.scss";
+@import "src/pages/SearchResultPage/SearchResult-sass.scss";

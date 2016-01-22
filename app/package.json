@@ -1,0 +1,26 @@
+{
+  "name": "MyProject",
+  "version": "1.0.0",
+  "description": "Sample angular with UI router, SASS and Gulp build script",
+  "main": "app.js",
+  "scripts": {
+    "test": "check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nope"
+  },
+  "keywords": [
+    "check"
+  ],
+  "author": "james",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.3",
+    "gulp-uglify": "^1.2.0",
+    "rimraf": "^2.4.1"
+  }
+}
