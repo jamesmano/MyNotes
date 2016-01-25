@@ -1,0 +1,9 @@
+<div id="search-result">
+    <accordion close-others="false">
+        <accordion-group class="panel panel-success" heading="{{result.question}}" 
+                         ng-repeat="result in searchResultVM.searchResults" >
+           <div ng-bind-html="result.answer"></div>
+        </accordion-group>
+    </accordion>
+</div>
+

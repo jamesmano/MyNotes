@@ -1,0 +1,15 @@
+<div class="q-a-panal">
+    <div class="q-a-panal-header">
+        <div class="input-group">
+          <span class="input-group-btn">
+            <button class="btn btn-success" type="button" ng-click="questionAnserVM.goToNext(false)">PREVIOUS</button>
+          </span>
+          <input type="text" class="form-control text-center" ng-model="questionAnserVM.qno" 
+                 ng-change="questionAnserVM.goToQuestion()">
+          <span class="input-group-btn">
+            <button class="btn btn-success" type="button" ng-click="questionAnserVM.goToNext(true)">NEXT</button>
+          </span>
+        </div>
+    </div>
+    <div id="qus-ans" ui-view></div>
+</div>

@@ -1,0 +1,21 @@
+<table class="table">
+    <tr>
+        <td>Qes No</td>
+        <td>Qes Type</td>
+        <td>Question</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr ng-repeat="item in qusAnsListWidgetVM.qlist">
+        <td>{{item.qno}}</td>
+        <td>{{item.qtype}}</td>
+        <td>{{item.question}}</td>
+        <td>
+            <span class="glyphicon glyphicon-pencil" 
+                  ng-click="qusAnsListWidgetVM.doEdit(item)" data-toggle="modal" data-target="#myModal"></span>
+        </td>
+        <td>
+            <span class="glyphicon glyphicon-remove" ng-click="qusAnsListWidgetVM.doDelete(item)"></span>
+        </td>
+    </tr>
+</table>

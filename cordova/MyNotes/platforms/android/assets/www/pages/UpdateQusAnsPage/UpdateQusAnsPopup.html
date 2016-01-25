@@ -1,0 +1,24 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" ng-click="updateQusAnsPopupVM.doCancel()" aria-hidden="true">&times;</button>
+    <h4 class="modal-title" id="myModalLabel">Question Type : {{updateQusAnsPopupVM.question.qtype}}</h4>
+  </div>
+  <div class="modal-body">
+    <div class="form-group">
+      <label for="comment">Question</label>
+      <textarea class="form-control" rows="2" id="comment" ng-model="updateQusAnsPopupVM.question.question"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="comment">Answer</label>
+      <div class="form-rich-text" text-angular ng-model="updateQusAnsPopupVM.question.answer" name="demo-editor" 
+         ta-text-editor-class="border-around" ta-html-editor-class="border-around"></div>
+    </div>
+    <div ng-if="updateQusAnsPopupVM.errorRes">
+        <alert type="danger" close="updateQusAnsPopupVM.errorRes = null">{{updateQusAnsPopupVM.errorRes}}</alert>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-danger" ng-click="updateQusAnsPopupVM.doCancel()">Close</button>
+    <button type="button" class="btn btn-success" ng-click="updateQusAnsPopupVM.doSave()">Save changes</button>
+  </div>
+</div>
